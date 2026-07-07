@@ -1,9 +1,13 @@
-name: my-first-workflow
+name: manual-workflow
 
-on:
-  push:
-    branches:
-      - master
+on: workflow_dispatch # manual trigger
+ # on : 
+ #  push : 
+ #    branches: main -> automatic trigger on push to main branch
+
+ # on:
+ #  schedule:
+ #  - cron: '0 0 * * *' -> automatic trigger on schedule (every day at midnight)
 
 jobs:
     build:
